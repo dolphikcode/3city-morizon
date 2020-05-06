@@ -1,0 +1,109 @@
+miasto;dzielnica;ulica;cena;powierzchnia;cena_m2;pokoje;pietro;liczba_pieter;liczba_poziomow;liczba_lazienek;lazienka_powierzchnia;lazienka_wc;rynek;rok_budowy;liczba_sypialni;balkon;taras;balkon_powierzchnia;kuchnia_powierzchnia;kuchnia_typ;ogrodek_powierzchnia;typ_budynku;material_budowlany;stan_budynku;stan_nieruchomosci
+Gdañsk;Jasie;;299 000;32,61;9168,97;2;2 / 4;4;;;;;wtórny;2020;1;;;;;;;;;;
+Gdañsk M.;Gdañsk;Przymorze Wielkie,;870 000;64,00;13 593,75;3;6 / 17;17;;1;;razem;wtórny;;2;;;;;aneks kuchenny - po³¹czony z salonem;;apartamentowiec;;;idealny
+Gdañsk;Œródmieœcie;ul. Chmielna;Zapytaj o c;189,20;;2;6 / 7;7;2;1;;;pierwotny;2018;;;;;;;;;;;
+Gdañsk;Œródmieœcie;ul. Chmielna;Zapytaj o c;25,40;;1;5 / 7;7;1;1;;;pierwotny;2018;;;;;;;;;;;
+Gdañsk;Œródmieœcie;ul. Chmielna;Zapytaj o c;36,80;;1;2 / 6;6;1;1;;;pierwotny;2018;;;;;;;;;;;
+Gdañsk;Œródmieœci;;318 541;27,11;11 749,94;1;2 / 5;5;;;;;pierwotny;2021;;;;;;;;;;;
+Gdañsk;Wrzeszcz;ul. Grudzi¹dzka 12;Zapytaj o c;68,99;;3;4;;;;;;pierwotny;2021;;Tak;;9,98;;;;;;;
+Gdañsk;£ostowice;ul. Ofiar Grudnia 70;Zapytaj o c;55,39;;3;1;;;;;;pierwotny;2022;;Tak;;6,56;;;;;;;
+Gdañsk;Jasieñ;ul. Lawendowe Wzgórza;Zapytaj o c;52,22;;3;3;;;;;;pierwotny;2021;;Tak;;5,28;;;;;;;
+Gdañsk;Borkow;;301 925;46,50;6493,01;2;3 / 3;3;;;;;pierwotny;2020;;;;;;;;;;;
+Gdañsk;£ostowic;;298 156;45,52;6550;2;parter / 3;3;;;;;pierwotny;2021;;Nie;Nie;;;;;;;;
+Gdañsk;Borkow;;324 090;49,86;6500;2;3 / 3;3;;;;;pierwotny;2021;;;;;;;;;;;
+Gdañsk;Letnica;ul. Starowiejska 50;Zapytaj o c;27,96;;1;10;;;;;;pierwotny;2021;;;;;;;;;;;
+Gdañsk;Moren;;449 000;48,00;9354,17;2;1 / 3;3;;;;;wtórny;2012;;;;;;;;;;;
+Gdañsk;Jasieñ;ul. Potêgowska;Zapytaj o c;67,78;;2;3;;;;;;pierwotny;2020;;Tak;;3,65;;;;;;;
+Gdañsk;Jasieñ;ul. Potêgowska;Zapytaj o c;74,41;;2;3;;;;;;pierwotny;2020;;Tak;;5,81;;;;;;;
+Gdañsk;Jasieñ;ul. Lawendowe Wzgórza;Zapytaj o c;66,54;;3;2;;;;;;pierwotny;2021;;Tak;;8,88;;;;;;;
+Gdañsk;Borkow;;335 052;54,48;6150;3;1 / 3;3;;;;;pierwotny;2021;;;;;;;;;;;
+Gdañsk;£ostowic;;349 900;57,92;6041,09;3;1 / 4;4;;;;;pierwotny;2021;;;;;;;;;;;
+Gdañsk;£ostowic;;332 892;52,84;6300;3;parter / 3;3;;;;;pierwotny;2021;;Nie;Nie;;;;;;;;
+Gdañsk;£ostowic;;346 363;57,25;6050;3;2 / 3;3;;;;;pierwotny;2021;;Nie;Nie;;;;;;;;
+Gdañsk;£ostowic;;359 000;61,19;5866,97;4;1 / 4;4;;;;;pierwotny;2021;;;;;;;;;;;
+Gdañsk;£ostowic;;378 000;66,50;5684,21;4;2 / 4;4;;;;;pierwotny;2021;;;;;;;;;;;
+Gdañsk;Jasie;;389 000;57,32;6786,46;4;parter / 1;1;;;;;pierwotny;2021;;;;;;;;;;;
+Gdañsk;Ujeœcisko-£ostowice;Warszawska 51 C;650 000;89,06;7298,45;2;1 / 1;1;;;;;wtórny;;;;;;;;;;;;
+Gdañsk;Ujeœcisko-£ostowice;Warszawska 51 C;390 000;47,26;8252,22;1;parter / 1;1;;;;;wtórny;;;;;;;;;;;;
+Gdañsk;Borkowsk;;305 240;46,96;6500;2;3 / 3;3;;1;;;pierwotny;2021;;Tak;;;;ANEKS KUCHENNY;;NISKI BLOK;;;DO WYKOÑCZENIA
+Gdañsk;Oliw;;778 604;63,82;12 200;3;1 / 3;3;;1;;;pierwotny;2020;;Tak;;;;ANEKS KUCHENNY;;KAMIENICA;YTONG;;DO WYKOÑCZENIA
+Gdañsk;Osowa;Zeusa;1 190 000;176,40;6746,03;4;1 / 1;1;2;;;;wtórny;2019;;Tak;Nie;;;osobna;;;Pustak;Deweloperski;
+Gdañsk;Jasieñ;Myœliwska;679 000;63,00;10 777,78;3;4 / 4;4;;2;;razem;wtórny;2013;;Tak;;7;;aneks;;blok;pustak;bardzo dobry;
+Gdañsk;W³adys³awa Jagie³³;;301 525;48,83;6174,99;3;2 / 4;4;;1;;;pierwotny;2021;;Tak;;;;ANEKS KUCHENNY;;NISKI BLOK;;;DO WYKOÑCZENIA
+Gdañsk;W³adys³awa Jagie³³;;247 137;36,64;6745,01;2;parter / 4;4;;1;;;pierwotny;2021;;Tak;;;;ANEKS KUCHENNY;;NISKI BLOK;;;DO WYKOÑCZENIA
+Gdañsk;W³adys³awa Jagie³³;;271 554;43,31;6270,01;2;parter / 4;4;;1;;;pierwotny;2021;;Tak;;;;ANEKS KUCHENNY;;NISKI BLOK;;;DO WYKOÑCZENIA
+Gdañsk;Borkowsk;;378 972;62,64;6050;3;2 / 3;3;;1;;;pierwotny;2021;;Tak;;;;ANEKS KUCHENNY;;NISKI BLOK;;;DO WYKOÑCZENIA
+Gdañsk;Oliw;;1 087 000;86,96;12 500;4;2 / 3;3;;1;;;pierwotny;2020;;Tak;;;;ANEKS KUCHENNY;;KAMIENICA;YTONG;;DO WYKOÑCZENIA
+Gdañsk;Wrzeszcz;ul. Grudzi¹dzka 12;Zapytaj o c;41,38;;2;3;;;;;;pierwotny;2021;;Tak;;5,38;;;;;;;
+Gdañsk;Letnica;ul. Starowiejska 50;Zapytaj o c;40,02;;2;7;;;;;;pierwotny;2021;;;;;;;;;;;
+Gdañsk;£ostowice;ul. Ofiar Grudnia 70;Zapytaj o c;40,45;;2;1;;;;;;pierwotny;2022;;Tak;;4,8;;;;;;;
+Gdañsk;Œródmieœcie;ul. Chmielna;Zapytaj o c;85,90;;3;4 / 7;7;1;;;;pierwotny;2018;;;;;;;;;;;
+Gdañsk;VII Dwór;ul. Slowackiego 77;Zapytaj o c;40,24;;2;1;;;;;;pierwotny;2020;;;;;;;;;;;
+Gdañsk;Letnica;ul. Starowiejska 50;Zapytaj o c;57,41;;3;6;;;;;;pierwotny;2021;;Tak;;7,04;;;;;;;
+Gdañsk;VII Dwór;ul. Slowackiego 77;Zapytaj o c;38,17;;2;1;;;;;;pierwotny;2020;;;;;;;;;;;
+Gdañsk;BrzeŸno;Gen. Józefa Hallera;599 000;46,11;12 990,67;2;6 / 12;12;;;;;wtórny;2019;1;Tak;;;;;;Apartamentowiec;;;
+Gdañsk;Œródmieœcie;Jana Heweliusza;624 000;48,00;13 000;2;2 / 3;3;1;;;;wtórny;1956;1;Tak;;;;;;Kamienica;ceg³a;;
+Gdañsk;£ostowice;ul. Ofiar Grudnia 70;Zapytaj o c;40,70;;2;1;;;;;;pierwotny;2022;;Tak;;4,8;;;;;;;
+Gdañsk;Piecki;Migowska;515 264;45,72;11 269,99;2;1 / 2;2;;;;;pierwotny;2020;1;;Tak;;;;;Apartamentowiec;;;
+Gdañsk;Wrzeszcz Górny;Migowska;1 265 208;124,04;10 200;5;parter / 2;2;;;;;pierwotny;2020;4;;;;;;;Apartamentowiec;;;
+Gdañsk;Wrzeszcz;ul. Grudzi¹dzka 12;Zapytaj o c;115,63;;5;5;;;;;;pierwotny;2021;;;;;;;;;;;
+Gdañsk;Œródmieœcie;Mostek;465 000;55,12;8436,14;2;1 / 9;9;;;;;wtórny;1970;;;;;;;;Blok Mieszkalny;konstrukcja mieszana;;
+Gdañsk;Strzy¿a;Mieczys³awa Kar³owicza;480 000;42,60;11 267,61;3;parter / 2;2;1;1;3;razem;wtórny;1950;;Nie;Nie;;;osobna;70;kamienica;ceg³a;dobry;
+Gdañsk;Morena;Myœliwska;499 000;49,80;10 020,08;2;1 / 2;2;;;;;wtórny;2002;;Tak;;;;;;Blok Mieszkalny;;;
+Gdañsk;Zakoniczyn;Jaworzniaków;885 000;144,60;6120,33;5;1 / 1;1;;;;;wtórny;2010;;Tak;;;;;;Blok Mieszkalny;silikat;;
+Gdañsk;Ujeœcisko-£ostowice;£ostowice,;399 000;52,00;7673,08;2;2 / 2;2;1;1;5,8;razem;wtórny;2011;;Tak;Nie;5,2;;aneks;;blok;pustak;bardzo dobry;
+Gdañsk;Zaspa;Konstantego Cio³kowskiego;659 000;71,70;9191,07;4;6 / 8;8;1;;;;wtórny;1980;3;Tak;;;;;;Blok Mieszkalny;wielka p³yta;;
+Gdañsk;Œródmieœcie;Toruñska;875 700;83,40;10 500;4;4 / 8;8;;2;;;wtórny;2012;;Tak;;;;ANEKS KUCHENNY;;APARTAMENTOWIEC;;;
+Gdañsk;Ujeœcisko;Kaliska;355 000;60,39;5878,46;2;2 / 2;2;;1;;;wtórny;1985;;;;;;ODDZIELNA;;NISKI BLOK;;;DO REMONTU
+Gdañsk;Kokoszki;Fundamentowa;345 000;53,00;6509,43;3;4 / 4;4;;;;;wtórny;1974;2;Tak;;;;;;Blok Mieszkalny;;;
+Gdañsk;Ujeœcisko-£ostowice;£ostowice,;373 363;62,75;5950;3;1 / 3;3;1;1;4,27;razem;pierwotny;2019;;Tak;Nie;5,3;;aneks;;blok;zró¿nicowany;surowy otwarty;
+Gdañsk;Jasieñ;Potêgowska;485 500;74,63;6505,43;2;3 / 3;3;2;1;6,44;razem;pierwotny;2019;;Tak;Nie;4,82;;aneks;;blok;beton;bardzo dobry;
+Gdañsk;Zakoniczyn;Œwiêtokrzyska;379 000;46,00;8239,13;2;parter / 2;2;;;;;wtórny;2018;;;;;;OTWARTA;;NISKI BLOK;;;BARDZO WYSOKI STANDARD
+Gdañsk;Ujeœcisko-£ostowice;£ostowice,;301 925;46,45;6500;2;3 / 3;3;1;1;4,82;razem;pierwotny;2019;;Tak;Tak;5,7;;aneks;;blok;zró¿nicowany;surowy otwarty;
+Gdañsk;Wrzeszcz;al. Grunwaldzka;499 000;50,00;9980;2;3 / 3;3;;1;;;wtórny;1965;;Tak;;;;ODDZIELNA;;NISKI BLOK;CEG£A;;DOBRY
+Gdañsk;Jasieñ;Potêgowska;554 000;80,00;6925;3;3 / 4;4;2;;;;wtórny;2013;2;Tak;Tak;;;;;Blok Mieszkalny;konstrukcja ¿elbetowa;;
+Gdañsk;Oliwa;Maurycego Beniowskiego;799 999;67,38;11 872,94;3;parter / 4;4;;;;;wtórny;2014;;;;;;OTWARTA;;NISKI BLOK;;;BARDZO WYSOKI STANDARD
+Gdañsk;Œródmieœcie;Chmielna;2 620 000;150,00;17 466,67;4;5 / 5;5;;;;;wtórny;2016;3;Tak;Tak;;;;;Apartamentowiec;;;
+Gdañsk;Ujeœcisko-£ostowice;Ul. Niepo³omicka 46;Zapytaj o c;41,41;;2;parter;;;;;;pierwotny;2021;;;;;;;13,49;;;;
+Gdañsk;Ujeœcisko-£ostowice;Ul. Niepo³omicka 46;Zapytaj o c;41,41;;2;parter;;;;;;pierwotny;2021;;;;;;;26,77;;;;
+Gdañsk;Ujeœcisko-£ostowice;Ul. Niepo³omicka 46;Zapytaj o c;51,08;;3;parter;;;1;;razem;pierwotny;2021;;;;;;aneks;16,85;blok;bloczki;;
+Gdañsk;Ujeœcisko-£ostowice;Ul. Niepo³omicka 46;Zapytaj o c;56,36;;3;parter;;;;;;pierwotny;2021;;;;;;;24,07;;;;
+Gdañsk;Ujeœcisko-£ostowice;Ul. Niepo³omicka 46;Zapytaj o c;72,18;;4;1;;;;;;pierwotny;2021;;Tak;;4,54;;;;;;;
+Gdañsk;Œródmieœcie;RzeŸnicka;545 000;52,16;10 448,62;2;2 / 4;4;;;;;wtórny;2021;;;;;;;;Blok Mieszkalny;;;
+Gdañsk;Stare Miasto;Ogarna;895 000;53,06;16 867,70;3;1 / 3;3;;;;;wtórny;1950;;;;;;;;Kamienica;ceg³a;;
+Gdañsk;Piecki-Migowo;Piecki;489 000;70,40;6946,02;3;4 / 4;4;1;1;8;osobno;wtórny;1983;;Tak;Nie;6;;osobna;;blok;;bardzo dobry;
+Gdañsk;Wrzeszcz;Ludwika Waryñskiego;949 000;110,72;8571,17;4;1 / 3;3;;1;;;wtórny;1913;;Tak;;;;ODDZIELNA;;KAMIENICA;CEG£A;;BARDZO WYSOKI STANDARD
+Gdañsk;Zaspa;al. Jana Paw³a II;999 900;83,00;12 046,99;4;7 / 12;12;;1;;;wtórny;2016;;Tak;;;;ANEKS KUCHENNY;;APARTAMENTOWIEC;;;BARDZO WYSOKI STANDARD
+Gdañsk;Œródmieœcie;œw. Barbary;620 000;53,50;11 588,79;2;1;;;1;;;wtórny;2018;;Tak;;;;Z OKNEM;;APARTAMENTOWIEC;;;BARDZO WYSOKI STANDARD
+Gdañsk;Orunia Górna;gen. Kazimierza Sosnkowskiego;799 000;118,00;6771,19;5;3 / 3;3;;2;;;wtórny;2005;;Tak;;;;OTWARTA;;NISKI BLOK;;;BARDZO WYSOKI STANDARD
+Gdañsk;¯abianka-Wejhera-Jelitkowo-Tysi¹clecia;Wypoczynkowa;1 299 000;65,00;19 984,62;3;1 / 3;3;1;1;;razem;wtórny;2009;;Tak;Nie;6;;aneks;;apartamentowiec;;bardzo dobry;
+Gdañsk;Jasieñ;ul. Lawendowe Wzgórza;Zapytaj o c;57,34;;3;1;;;;;;pierwotny;2021;;Tak;;6,4;;;;;;;
+Gdañsk;Che³m;Nieborowska;439 000;47,00;9340,43;2;3 / 3;3;;;;;wtórny;2003;;Tak;;;;ODDZIELNA;;NISKI BLOK;;;WYSOKI STANDARD
+Gdañsk M.;Gdañsk;BrzeŸno;1 495 250;112,00;13 350,45;4;;;;;;;pierwotny;2019;3;;Tak;77;;;;apartamentowiec;;;deweloperski
+Gdañsk;Ujeœcisko;£ódzka;425 000;80,00;5312,50;3;3 / 3;3;;1;;;wtórny;1997;;Tak;;;;ODDZIELNA;;NISKI BLOK;;;DOBRY
+Gdañsk;Wrzeszcz;ul. Mickiewicza;Zapytaj o c;60,52;;3;2;;;;;;pierwotny;2021;;;;;;aneks;;;;;
+Gdañsk;Wrzeszcz;ul. Mickiewicza;Zapytaj o c;64,59;;3;2;;;;;;pierwotny;2021;;;;;;aneks;;;;;
+Gdañsk;Wrzeszcz;ul. Mickiewicza;Zapytaj o c;66,56;;3;1;;;;;;pierwotny;2021;;;;;;aneks;;;;;
+Gdañski;Gdañsk;Przymorze,;720 000;59,72;12 056,26;3;14 / 16;16;;;;;wtórny;2016;;Tak;Nie;;;brak;;;;Wysoki standard;
+Gdañsk;Dolne Miasto;Przyokopowa;299 900;31,00;9674,19;2;1 / 3;3;;1;;;wtórny;1960;;;;;;Z OKNEM;;KAMIENICA;CEG£A;;DO REMONTU
+Gdañsk;Orunia-Œw. Wojciech-Lipce;ul. Starogardzka/W. Jagie³³y;Zapytaj o c;39,95;;2;3;;;;;;pierwotny;2021;;;;;;;;;;;
+Gdañsk;Orunia-Œw. Wojciech-Lipce;ul. Starogardzka/W. Jagie³³y;Zapytaj o c;45,52;;2;3;;;;;;pierwotny;2021;;;;;;;;;;;
+Gdañsk;Orunia-Œw. Wojciech-Lipce;ul. Starogardzka/W. Jagie³³y;Zapytaj o c;52,84;;3;2;;;;;;pierwotny;2021;;;;;;;;;;;
+Gdañsk;Orunia-Œw. Wojciech-Lipce;ul. Starogardzka/W. Jagie³³y;Zapytaj o c;52,71;;3;3;;;;;;pierwotny;2021;;;;;;;;;;;
+Gdañsk M.;Gdañs;;768 384;58,00;13 248;3;1;;;1;;;wtórny;2019;2;;;;;aneks kuchenny - po³¹czony z jadalni¹;;apartamentowiec;;;deweloperski
+Gdañsk M.;Gdañsk;BrzeŸno;868 000;65,00;13 353,85;3;;;;;;;pierwotny;2019;;;;;;;;apartamentowiec;;;deweloperski
+Gdañsk;¯abianka;GOSPODY;449 000;52,60;8536,12;3;10 / 10;10;;;;;wtórny;1979;;Tak;Nie;;;osobna;;;;Do odœwie¿enia;
+Gdañsk;Wrzeszcz;KILIÑSKIEGO JANA;330 000;30,00;11 000;1;1 / 3;3;;;;;wtórny;1965;;Nie;Nie;;;osobna;;;;Bardzo dobry;
+Gdañsk;Stogi;Niska;260 000;26,00;10 000;1;2 / 4;4;;;;;wtórny;1970;;Nie;Nie;;;pó³otwarta;;;;Dobry;
+Gdañsk;Œródmieœcie;Wyspa Spichrzów,;390 000;28,00;13 928,57;1;10 / 10;10;1;1;3,5;razem;wtórny;1970;;Tak;Nie;1;;wnêka;;blok;zró¿nicowany;do remontu;
+Gdañsk;Anny Jagiellonk;;495 000;53,00;9339,62;3;parter / 4;4;;;;;wtórny;2004;;;;;;;;NISKI BLOK;;;DO REMONTU
+Gdañsk;Wrzeszc;;335 000;32,50;10 307,69;2;6 / 8;8;;;;;wtórny;;;;;;;;;;;;
+Gdañsk;Juliusza S³owackieg;;495 000;50,60;9782,61;2;7 / 16;16;;;;;wtórny;2009;;;;;;OTWARTA;;APARTAMENTOWIEC;;;
+Gdañsk;Przymorze;Prezydenta Lecha Kaczyñskiego;1 395 000;91,00;15 329,67;4;1 / 16;16;;;;;wtórny;2012;;;;;;ODDZIELNA;;APARTAMENTOWIEC;;;
+Gdañsk;Stogi;Ho¿a;269 000;36,00;7472,22;2;parter / 4;4;;;;;wtórny;1967;;;;;;;;Blok;;;do wprowadzenia
+Gdañsk;Jasieñ;Aleksandry Gabrysiak;398 000;44,80;8883,93;2;1 / 3;3;;;;;wtórny;2014;;;;;;ANEKS KUCHENNY;;BLOK;;;
+Gdañsk;Œl¹sk;;1 125 000;93,00;12 096,77;4;5 / 6;6;;;;;wtórny;2019;;;;;;OTWARTA;;APARTAMENTOWIEC;;;
+Gdañsk;Przymorze;Ul. D¹browszczaków 22;1 395 000;91,00;15 329,67;4;1;;;;;;wtórny;2012;;Tak;;;;;;;ceg³a;;
+Gdañsk;Przymorze;Œl¹ska;1 200 000;93,00;12 903,23;4;5 / 6;6;;;;;wtórny;;;;;;;;;;;;
+Gdañsk;Kadetó;;322 000;32,50;9907,69;2;3 / 3;3;;;;;wtórny;1987;;;;;;ODDZIELNA;;BLOK;;;
+Gdañsk;Przymorze;Marina Primore,;1 395 000;91,00;15 329,67;4;1 / 16;16;1;;;osobno;wtórny;2012;;Tak;Tak;;;osobna;;apartamentowiec;ceg³a;;wysoki standard

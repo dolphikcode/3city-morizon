@@ -1,8 +1,10 @@
 import time
 import requests
+import numpy as np
 from slugify import slugify
 from bs4 import BeautifulSoup
 import csv
+import json
 
 class PageScrapper:
 
@@ -10,6 +12,7 @@ class PageScrapper:
 
         self.url = url
         self.last_page = self.get_last_page_number()
+        self.data_dict = {}
 
         print(f"Total number of pages: {self.last_page}")
 
@@ -22,11 +25,11 @@ class PageScrapper:
 
     def find_advertisements(self):
 
-        with open(csv_file_name, mode='w') as csv_file:
-            writer = csv.DictWriter(csv_file, fieldnames=csv_fieldnames, delimiter=';')
-            writer.writeheader()
+        #with open(csv_file_name, mode='w') as csv_file:
+        #    writer = csv.DictWriter(csv_file, fieldnames=csv_fieldnames, delimiter=';')
+        #    writer.writeheader()
 
-            for page_number in range(self.last_page + 1):
+            for page_number in range(5):#self.last_page + 1):
 
                 print(f"Page {page_number+1}/{self.last_page} processing...")
 
@@ -35,11 +38,12 @@ class PageScrapper:
 
                 for advertisement_index in range(len(advertisements)):
                     data = self.parse_advertisement(advertisements[advertisement_index]['href'])
+                    self.data_dict[advertisement_index] = data
                     print(data)
-                    writer.writerow(data)
+        #            writer.writerow(data)
                     time.sleep(1)
 
-            csv_file.close()
+        #    csv_file.close()
 
     def parse_advertisement(self, url):
 
@@ -48,12 +52,12 @@ class PageScrapper:
         page = self.read_page_content(url)
         parse_top = page.find('h1').findAll('span')
 
-        data['miasto'] = parse_top[0].get_text().strip()[:-1]
-        data['dzielnica'] = parse_top[1].get_text().strip()[:-1]
+        data['miasto'] = parse_top[0].get_text().strip().replace(',', '')
+        data['dzielnica'] = parse_top[1].get_text().strip().replace(',', '')
         try:
-            data['ulica'] = parse_top[2].get_text().strip()
+            data['ulica'] = parse_top[2].get_text()#.strip()
         except:
-            data['ulica'] = ''
+            data['ulica'] = np.nan
 
         parse_content = page.find("ul", {"class": "list-unstyled list-inline paramIcons"})
 
@@ -63,120 +67,40 @@ class PageScrapper:
         print(data['dzielnica'])
         print(data['ulica'])
 
-        data['cena'] = parse_content.find("li", {"class": "paramIconPrice"}).find("em").get_text().strip()[:-3]
+        try:
+            data['cena'] = float(parse_content.find("li", {"class": "paramIconPrice"}).find("em").get_text().replace('zł', '').replace(' ', ''))
+        except ValueError:
+            data['cena'] = np.nan
         print(data['cena'])
-        data['powierzchnia'] = parse_content.find("li", {"class": "paramIconLivingArea"}).find("em").get_text().strip()[:-3]
+        data['powierzchnia'] = float(parse_content.find("li", {"class": "paramIconLivingArea"}).find("em").get_text().strip()[:-3].replace(',', '.'))
         print(data['powierzchnia'])
         try:
-            data['cena_m2'] = parse_content.find("li", {"class": "paramIconPriceM2"}).find("em").get_text().strip()[:-3]
+            data['cena_m2'] = float(parse_content.find("li", {"class": "paramIconPriceM2"}).find("em").get_text().replace('zł', '').replace(' ', ''))#.strip()[:-3]
             print(data['cena_m2'])
         except:
-            data['cena_m2'] = ''
+            data['cena_m2'] = np.NaN
 
-        data['pokoje'] = parse_content.find("li", {"class": "paramIconNumberOfRooms"}).find("em").get_text().strip()
+        data['pokoje'] = parse_content.find("li", {"class": "paramIconNumberOfRooms"}).find("em").get_text()#.strip()
         print(data['pokoje'])
-
-        # Parse rest of content
-        ## define columns to save later
-        # data['pietro'] = ''
-        # data['liczba_pieter'] = ''
-        # data['liczba_poziomow'] = ''
-        # data['liczba_lazienek'] = ''
-        # data['lazienka_powierzchnia'] = ''
-        # data['laziekna_wc'] = ''
-        # data['rynek'] = ''
-        # data['rok_budowy'] = ''
-        # data['liczba_sypialni'] = ''
-        # data['balkon'] = ''
-        # data['taras'] = ''
-        # data['balkon_powierzchnia'] = ''
-        # data['kuchnia_powierzchnia'] = ''
-        # data['kuchnia_typ'] = ''
-        # data['ogrodek_powierzchnia'] = ''
-        # data['typ_budynku'] = ''
-        # data['material_budowlany'] = ''
-        # data['stan_budynku'] = ''
-        # data['stan_nieruchomosci'] = ''
 
         parse_content = page.find("section", {"class": "propertyParams"})
         parse_content2 = parse_content.findAll("tr")
 
         for tr in range(len(parse_content2)):
-            if (parse_content2[tr].find("th").get_text().strip() == "Piętro:"):
-                data['pietro'] = parse_content2[tr].find("td").get_text().strip()
-                print(data['pietro'])
+            key = parse_content2[tr].find("th").get_text().split(':')[0]
+            value = parse_content2[tr].find("td").get_text()
+            data[slugify(key)] = value
 
-            if (parse_content2[tr].find("th").get_text().strip() == "Liczba pięter:"):
-                data['liczba_pieter'] = parse_content2[tr].find("td").get_text().strip()
-                print(data['liczba_pieter'])
+        try:
+            parse_content = page.find("div", {"class": "description"}).findAll('p')
+            opis=''
+            for i in range (len(parse_content)):
+                opis=opis+parse_content[i].get_text()#.replace('m²','').replace('\n','').strip(' ')
+            data['tresc']=opis
+            print(opis)
+        except:
+            data['tresc']= np.NaN
 
-            if (parse_content2[tr].find("th").get_text().strip() == "Liczba poziomów mieszkania:"):
-                data['liczba_poziomow'] = parse_content2[tr].find("td").get_text().strip()
-                print(data['liczba_poziomow'])
-
-            if (parse_content2[tr].find("th").get_text().strip() == "Liczba łazienek:"):
-                data['liczba_lazienek'] = parse_content2[tr].find("td").get_text().strip()
-                print(data['liczba_lazienek'])
-
-            if (parse_content2[tr].find("th").get_text().strip() == "Powierzchnia łazienki:"):
-                data['lazienka_powierzchnia'] = parse_content2[tr].find("td").get_text().strip()[:-3]
-                print(data['lazienka_powierzchnia'])
-
-            if (parse_content2[tr].find("th").get_text().strip() == "Czy łazienka z WC:"):
-                data['lazienka_wc'] = parse_content2[tr].find("td").get_text().strip()
-                print(data['lazienka_wc'])
-
-            if (parse_content2[tr].find("th").get_text().strip() == "Rynek:"):
-                data['rynek'] = parse_content2[tr].find("td").get_text().strip()
-                print(data['rynek'])
-
-            if (parse_content2[tr].find("th").get_text().strip() == "Rok budowy:"):
-                data['rok_budowy'] = parse_content2[tr].find("td").get_text().strip()
-                print(data['rok_budowy'])
-
-            if (parse_content2[tr].find("th").get_text().strip() == "Liczba sypialni:"):
-                data['liczba_sypialni'] = parse_content2[tr].find("td").get_text().strip()
-                print(data['liczba_sypialni'])
-
-            if (parse_content2[tr].find("th").get_text().strip() == "Balkon:"):
-                data['balkon'] = parse_content2[tr].find("td").get_text().strip()
-                print(data['balkon'])
-
-            if (parse_content2[tr].find("th").get_text().strip() == "Taras:"):
-                data['taras'] = parse_content2[tr].find("td").get_text().strip()
-                print(data['taras'])
-
-            if (parse_content2[tr].find("th").get_text().strip() == "Powierzchnia balkonu:"):
-                data['balkon_powierzchnia'] = parse_content2[tr].find("td").get_text().strip()[:-3]
-                print(data['balkon_powierzchnia'])
-
-            if (parse_content2[tr].find("th").get_text().strip() == "Powierzchnia kuchni:"):
-                data['kuchnia_powierzchnia'] = parse_content2[tr].find("td").get_text().strip()[:-3]
-                print(data['kuchnia_powierzchnia'])
-
-            if (parse_content2[tr].find("th").get_text().strip() == "Typ kuchni:"):
-                data['kuchnia_typ'] = parse_content2[tr].find("td").get_text().strip()
-                print(data['kuchnia_typ'])
-
-            if (parse_content2[tr].find("th").get_text().strip() == "Powierzchnia ogródka:"):
-                data['ogrodek_powierzchnia'] = parse_content2[tr].find("td").get_text().strip()[:-3]
-                print(data['ogrodek_powierzchnia'])
-
-            if (parse_content2[tr].find("th").get_text().strip() == "Typ budynku:"):
-                data['typ_budynku'] = parse_content2[tr].find("td").get_text().strip()
-                print(data['typ_budynku'])
-
-            if (parse_content2[tr].find("th").get_text().strip() == "Materiał budowlany:"):
-                data['material_budowlany'] = parse_content2[tr].find("td").get_text().strip()
-                print(data['material_budowlany'])
-
-            if (parse_content2[tr].find("th").get_text().strip() == "Stan budynku:"):
-                data['stan_budynku'] = parse_content2[tr].find("td").get_text().strip()
-                print(data['stan_budynku'])
-
-            if (parse_content2[tr].find("th").get_text().strip() == "Stan nieruchomości:"):
-                data['stan_nieruchomosci'] = parse_content2[tr].find("td").get_text().strip()
-                print(data['stan_nieruchomosci'])
 
         return data
 
@@ -184,14 +108,13 @@ class PageScrapper:
         page = requests.get(url)
         return BeautifulSoup(page.content, "html.parser")
 
+    def create_json(self):
+        with open('data.json', 'w') as fp:
+            json.dump(self.data_dict, fp)
+
 
 URL = 'https://www.morizon.pl/mieszkania/gdansk/'
-csv_file_name = "nieruchomosci.csv"
-csv_fieldnames = ['miasto', 'dzielnica', 'ulica', 'cena', 'powierzchnia', 'cena_m2', 'pokoje', 'pietro', 'liczba_pieter',
-                'liczba_poziomow', 'liczba_lazienek', 'lazienka_powierzchnia', 'lazienka_wc', 'rynek', 'rok_budowy', 'liczba_sypialni',
-                'balkon', 'taras', 'balkon_powierzchnia', 'kuchnia_powierzchnia', 'kuchnia_typ', 'ogrodek_powierzchnia', 'typ_budynku',
-                'material_budowlany', 'stan_budynku', 'stan_nieruchomosci']
-
 
 scraper = PageScrapper(URL)
 scraper.find_advertisements()
+scraper.create_json()
