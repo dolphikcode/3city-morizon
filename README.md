@@ -1,8 +1,6 @@
-# Simple Web Scraping Example
+# Simple Web Scraping for Morizon.pl (project 3city real estates prices)
 
-Web Scraping example code for educational purposes. 
-The project was used during the presentation about the web scraping method, 
-organized as part of regular meetings of the [DataWorkshop](https://dataworkshop.eu/) Tri-City group.
+Web Scraping example code for educational purposes, based on the code from https://github.com/rgruberski/python-simple-web-scraping
 
 ## Requirements
 
@@ -12,8 +10,8 @@ Python 3.6+
 
 Run terminal, clone the repository and enter to the newly created directory
 ```console
-user@host:~$ git clone https://github.com/rgruberski/python-simple-web-scraping.git
-user@host:~$ cd python-simple-web-scraping
+user@host:~$ git clone https://github.com/dolphikcode/3city-morizon.git
+user@host:~$ cd 3city-morizon
 ```
 
 Create a virtual environment
