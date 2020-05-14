@@ -5,6 +5,7 @@ from slugify import slugify
 from bs4 import BeautifulSoup
 import csv
 import json
+import random
 
 class PageScrapper:
 
@@ -13,6 +14,7 @@ class PageScrapper:
         self.url = url
         self.last_page = self.get_last_page_number()
         self.data_dict = {}
+        self.licznik = 1
 
         print(f"Total number of pages: {self.last_page}")
 
@@ -38,10 +40,12 @@ class PageScrapper:
 
                 for advertisement_index in range(len(advertisements)):
                     data = self.parse_advertisement(advertisements[advertisement_index]['href'])
-                    self.data_dict[advertisement_index] = data
+                    self.data_dict[self.licznik] = data
+                    self.licznik += self.licznik
                     print(data)
         #            writer.writerow(data)
-                    time.sleep(1)
+                    sleep_time = random.uniform(0.2, 5) #generowanie float z przedzialu od 0.2 do 5
+                    time.sleep(sleep_time) #przerwa zeby nie zostac zablokowanym
 
         #    csv_file.close()
 
